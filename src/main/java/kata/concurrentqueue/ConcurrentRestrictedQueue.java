@@ -1,5 +1,11 @@
 package kata.concurrentqueue;
 
+/**
+ * This is a queue that has a maximum size that can be accessed concurrently and uses old school
+ * Java concurrency.
+ *
+ * <p>Newer concurrency options that could be used: {@link java.util.concurrent.LinkedBlockingQueue}.
+ */
 class ConcurrentRestrictedQueue {
 
     private final Object lock = new Object();
